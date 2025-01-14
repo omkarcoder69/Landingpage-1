@@ -1,0 +1,72 @@
+@font-face{
+    font-family: myfont;
+    src: url(Gilroy-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* navigation */
+.nav{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #dadada ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav  h4{
+    font-size: 1vw;
+}
+.nav i{
+    font-size: 1.2vw;
+    font-weight: 800;
+    display: none;
+}
+
+@media (max-width:600px){
+    .nav{
+        background-color: lightseagreen;
+        color: #fff;
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav h4{
+       font-size: 4vw;
+       display: none;
+    }
+
+    .nav i{
+        font-size: 6vw;
+        display: block;
+        
+    }
+}
